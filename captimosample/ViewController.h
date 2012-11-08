@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    unsigned int _counter;
+    CGPoint _oldCenter;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *textFloating;
+@property (weak, nonatomic) IBOutlet UIButton *buttonText;
+
+- (IBAction)startText:(id)sender;
 
 @end
